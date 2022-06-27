@@ -5,11 +5,56 @@
     <img src="" *ngIf="14 > 15" />
     <img src="" *ngIf="14 <= 15" />
     <div class="weather-data">
+      <!-- Here we will show the basic information of the weather, location and the temperature -->
       <div class="location"></div>
       <div class="temperature">{{ null | number: "1.0-0" }}°C</div>
     </div>
   </div>
-  <div class="lower-data"></div>
+  <div class="lower-data">
+    <div class="more-info-label">More information</div>
+    <div class="more-info-container">
+      <div class="info-block">
+        <div class="info-block-label">
+          <!-- Here we add an icon showing min temperature -->
+          <img src="" />
+          <span>min</span>
+        </div>
+        <div class="info-block-value">
+          <!-- Here we will input the minimum temperature -->
+        </div>
+      </div>
+      <div class="info-block">
+        <div class="info-block-label">
+          <!-- Here we add an icon showing max temperature -->
+          <img src="" />
+          <span>max</span>
+        </div>
+        <div class="info-block-value">
+          <!-- Here we will input the maximum temperature -->
+        </div>
+      </div>
+      <div class="info-block">
+        <div class="info-block-label">
+          <!-- Here we add an icon showing Humidity -->
+          <img src="" />
+          <span>humidity</span>
+        </div>
+        <div class="info-block-value">
+          <!-- Here we will input the Humidity Percentage -->
+        </div>
+      </div>
+      <div class="info-block">
+        <div class="info-block-label">
+          <!-- Here we add an icon showing wind stats-->
+          <img src="" />
+          <span>wind</span>
+        </div>
+        <div class="info-block-value">
+          <!-- Here we will input the Wind Speed -->
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <router-outlet></router-outlet>
