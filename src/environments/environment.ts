@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // what is underneath was for non NGX getting api data
+  // weatherAPIHostBaseUrl: 'http://api.weatherapi.com/v1',
+  // weatherAPIHostHeaderName: 'weatherAPI-Host',
+  // weatherAPIHostHeaderValue: 'api.weatherapi.com/v1',
+  // weatherAPIKeyHeaderName: 'weatherAPI-Key',
+  // weatherAPIKeyHeaderValue: 'f919efeb57424ad1b1f32445222806',
 };
 
 /*
