@@ -1,4 +1,4 @@
-export interface weather {
+export interface Weather {
   name: string;
   url: string;
 }

@@ -1,5 +1,5 @@
-import { weather } from './models/weather.model';
+import { Weather } from './models/weather.model';
 
 export interface Appstate {
-  readonly weather: weather[];
+  readonly weather: Weather[];
 }

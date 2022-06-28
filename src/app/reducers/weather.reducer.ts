@@ -1,14 +1,14 @@
 import { Action } from '@ngrx/store';
-import { weather } from '../models/weather.model';
+import { Weather } from '../models/weather.model';
 import * as weatherActions from '../actions/weather.actions';
 
-const initalState: weather = {
+const initalState: Weather = {
   name: 'InitalWeather',
   url: 'http://google.com',
 };
 
-export function weatherReducer(
-  state: weather[] = [initalState],
+export function reducer(
+  state: Weather[] = [initalState],
   action: weatherActions.Actions
 ) {
   switch (action.type) {

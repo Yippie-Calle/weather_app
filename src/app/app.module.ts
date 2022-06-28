@@ -5,8 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { StoreModule } from '@ngrx/store';
-import { weatherReducer } from './reducers/weather.reducer';
-import { WeatherService } from './services/weather.service';
+import { reducer } from './reducers/weather.reducer';
+//import { WeatherService } from './services/weather.service';
+//import { WeatherService } from './services/weather.service';
 
 // import { HttpClientModule } from '@angular/common/http';
 
@@ -16,7 +17,7 @@ import { WeatherService } from './services/weather.service';
     BrowserModule,
     AppRoutingModule,
     StoreModule.forRoot({
-      weather: weatherReducer,
+      Weather: reducer,
     }),
   ],
   providers: [],
